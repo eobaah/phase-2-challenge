@@ -10,18 +10,18 @@ chai.use(chaiChange)
 
 describe('month()', function(){
 
-  it.only('should be a function', function(){
+  it('should be a function', function(){
     expect( month ).to.be.a('function')
   })
 
-  it('Checks if function returns correct month', function(){
-    let date = new Date(2017, 5, 19)
-    expect( month( date ) ).to.equal( "June" )
+  it('Checks if function returns correct month', function() {
+    let date = new Date( 2017, 5, 19 )
+    expect( month( date ) ).to.equal( "May" )
   })
 
-
-  it('Checks if user enters valid input and throws an error providing feedback', function(){
+  it('Checks if user enters an invalid input and throws an error providing feedback', function(){
     let date = new Date(2017, "June", 19)
-    expect( month( date ) ).to.throw('Please enter a valid month with the format YYYY,MM,DD')
+
+    expect( month.bind( date ) ).to.throw( 'Please enter a valid date with the format YYYY, MM, DD')
   })
 })
