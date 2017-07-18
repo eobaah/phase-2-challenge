@@ -1,10 +1,9 @@
 import chai, { expect } from 'chai'
 import chaiChange from 'chai-change'
-import { month, reverseSentence, nameProps } from './functions.js'
-// import { month,
-//          reverseSentence,
-//          nameProps,
-//          filterBetween } from './functions.js'
+import { month,
+         reverseSentence,
+         nameProps,
+         filterBetween } from './functions.js'
 
 chai.use( chaiChange )
 
@@ -71,5 +70,33 @@ describe( 'nameProps()', function() {
       "0: '646-345-8585'"
     ]
     expect( nameProps.bind( friend ) ).to.throw( 'Please enter a valid object containing key and value pairs' )
+  })
+})
+
+describe( 'filterBetween()', function() {
+
+  it( 'should be a function', function() {
+    expect( filterBetween ).to.be.a( 'function' )
+  })
+
+  let array = ['dog', 'cat', 'zebra', 'ape', 'lion', 'cow']
+
+  it( 'returns the names of the properties an object has in alphabetical order', function() {
+    let min = 'deer'
+    let max = 'giraffe'
+    expect( filterBetween( array, min, max ) ).to.eql( [ 'dog' ] )
+  })
+
+  it( 'returns an empty array when an empty object is entered', function() {
+    let min
+    let max
+    expect( filterBetween( array, min, max ) ).to.eql( [] )
+  })
+
+  it( 'checks if user enters an invalid input and throws an error providing feedback', function() {
+    let array = {'dog':'cat', 'zebra':'ape', 'lion': 'cow'}
+    let min
+    let max
+    expect( filterBetween( array, min, max ) ).to.equal( 'Please enter a valid array' )
   })
 })

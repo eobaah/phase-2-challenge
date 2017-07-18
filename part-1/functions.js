@@ -40,13 +40,26 @@ function nameProps( obj ) {
   }
 }
 
+function filterBetween( array, min, max ) {
+  if( !Array.isArray( array ) ) {
+    return 'Please enter a valid array'
+  } else {
+    var filterAnimals = array.filter( function( animal ) {
+      if ( min <= animal && animal <= max ) {
+        return animal
+      }
+    })
+    if ( filterAnimals.length !== 0 ) {
+      return filterAnimals
+    } else {
+      return []
+    }
+  }
+}
+
 module.exports = {
   month,
   reverseSentence,
-  nameProps
+  nameProps,
+  filterBetween
 }
-// module.exports = {
-//   month,
-//   nameProps,
-//   filterBetween
-// }
