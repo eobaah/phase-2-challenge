@@ -1,0 +1,115 @@
+body {
+
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-bar {
+  height: 4em;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  box-shadow: 5px 5px 1px #0e0e0e
+}
+.title-bar button {
+  align-self: center;
+  height: 2em;
+  margin: 0 5% 0 0;
+}
+
+.main-section {
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+.sections {
+  border: 5px solid black;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.section-nav-title {
+  background-color: grey;
+}
+
+.section-nav-title h2 {
+  padding: 0 0 0 1%;
+}
+
+.category-sections {
+  padding: 0 0 0 1%;
+}
+
+.category-sections a {
+  text-decoration: none;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: scroll;
+  padding: 0 0 0 1%;
+  width: 70%;
+}
+
+.main-section-output-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section-output-title h1 {
+  font-size: 3em;
+}
+
+.main-content-section {
+  display: flex;
+  flex-direction: column;
+  margin: 4% 0;
+}
+
+.main-section-output-movie-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.movie-names {
+  flex-grow: 1;
+}
+
+.play-btn {
+  align-self: flex-end;
+  height: 2em;
+  margin: 1% 3% 1% 15%;
+}
+
+.section-titles {
+  font-style: italic;
+  margin: 1% 0;
+}
+
+.main-section-output-movie-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section-output-movie-details-items {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.movie-time {
+  padding: 0 5% 0 0;
+}
