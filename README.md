@@ -43,10 +43,10 @@ month(date) // returns "December"
 
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `month()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `month()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `month()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `month()` are passing.
+- [x] __10:__ A test using expected/valid inputs for the `month()` function is written in `tests.js`.
+- [x] __10:__ A test using unexpected/invalid inputs for the `month()` function is written in `tests.js`.
+- [x] __30:__ Correct implementation of the `month()` is defined in `functions.js`.
+- [x] __10:__ Tests for `month()` are passing.
 
 ### Reverse a sentence
 
@@ -61,10 +61,10 @@ reverseSentence("Hello, world!") // => "world! Hello,"
 
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `reverseSentence()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `reverseSentence()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `reverseSentence()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `reverseSentence()` are passing.
+- [x] __10:__ A test using expected/valid inputs for the `reverseSentence()` function is written in `tests.js`.
+- [x] __10:__ A test using unexpected/invalid inputs for the `reverseSentence()` function is written in `tests.js`.
+- [x] __30:__ Correct implementation of the `reverseSentence()` is defined in `functions.js`.
+- [x] __10:__ Tests for `reverseSentence()` are passing.
 
 ### Names of properties
 
@@ -85,10 +85,10 @@ nameProps({}) // => []
 
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `nameProps()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `nameProps()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `nameProps()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `nameProps()` are passing.
+- [x] __10:__ A test using expected/valid inputs for the `nameProps()` function is written in `tests.js`.
+- [x] __10:__ A test using unexpected/invalid inputs for the `nameProps()` function is written in `tests.js`.
+- [x] __30:__ Correct implementation of the `nameProps()` is defined in `functions.js`.
+- [x] __10:__ Tests for `nameProps()` are passing.
 
 ### Filter between
 
