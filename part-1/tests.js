@@ -15,13 +15,13 @@ describe('month()', function(){
   })
 
   it('Checks if function returns correct month', function() {
-    let date = new Date( 2017, 5, 19 )
+    let date = new Date( "2017, 6, 19" )
     expect( month( date ) ).to.equal( "May" )
   })
 
   it('Checks if user enters an invalid input and throws an error providing feedback', function(){
-    let date = new Date(2017, "June", 19)
+    let date = new Date( '2017, "June", 19' )
 
-    expect( month.bind( date ) ).to.throw( 'Please enter a valid date with the format YYYY, MM, DD')
+    expect( month.bind( date ) ).to.throw( 'Please enter a valid date STRING with the format YYYY, MM, DD')
   })
 })

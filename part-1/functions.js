@@ -18,7 +18,7 @@ function month( date ) {
   ]
 
   if( date == 'Invalid Date' || date == undefined ) {
-    throw new Error( 'Please enter a valid date with the format YYYY, MM, DD' )
+    throw new Error( 'Please enter a valid date STRING with the format YYYY, MM, DD' )
   } else {
     return monthRange[ date.getMonth() - 1 ]
   }
